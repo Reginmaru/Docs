@@ -43,7 +43,6 @@ struct WindowView<Content: View>: View {
     var lineWidth: CGFloat = 2.0
     let content: () -> Content
     
-    @Environment(\.colorScheme) var mode: ColorScheme
     var body: some View {
         ZStack {
             Group {
